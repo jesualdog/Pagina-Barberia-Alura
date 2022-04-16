@@ -1,0 +1,404 @@
+body{
+    font-family: Roboto;
+    color: #464646;
+}
+
+/*--- --- --- --- --- --- --- CSS para la cabecera --- --- --- --- --- ---*/
+
+header{
+    background: #BBBBBB; /*Color de fondo a la cabecera*/
+    padding: 20px 0;
+}
+
+.img-cabecera{
+    width: 130px;
+    height: 150px;
+}
+
+.caja{
+    width: 940px; /*Ancho de nuestro div*/
+    position: relative;
+    margin: 0 auto; /*Centarliza el contenido de acuerdo a la pantalla*/
+}
+
+nav{
+    position: absolute; /*Especifica cómo el menu es posicionado en el documento*/
+    top: 70PX; /*Espacio superior del menu*/
+    right: 0;
+}
+
+nav li{
+    display: inline; /*Coloca los items de la lista horizontalmente*/
+    margin: 0 0 0 15px; /*Separar las palabras (izquierda 15px)*/
+}
+
+nav a{
+    text-transform: uppercase; /*Coloca el texto en mayusculas*/
+    color: black; /*Color del texto*/
+    font-weight: bold; /*Texto en negrita*/
+    font-size: 20px; /*Tamaño de la letra*/
+    text-decoration: none; /*Quitar el subrayado que estan debajo del texto*/
+}
+
+nav a:hover{
+    color: #A93226; /*Al pasar el mouse por el texto cambia de color*/
+}
+
+/*--- --- --- --- --- --- --- CSS para producto --- --- --- --- --- ---*/
+
+.main-productos{
+    background: #FEFEFE;
+}
+
+.producto-item{
+    background: #FEFEFE;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.regalo{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background: #424949;
+}
+
+.texto-regalo{
+    width: 67%;
+    color: #FEFEFE;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+.regalo-titulo1{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: left;
+}
+
+.regalo-titulo2{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.link{
+    text-align: right;
+}
+
+.link-regalo{
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #A93226;
+    color: #FEFEFE;
+    border-radius: 5px;
+}
+
+.imagen-regalo{
+    width: 30%;
+}
+
+.productos li{
+    display: inline-block; /*Coloca todo el contenido de cada li horizontalmente*/
+    text-align: center;
+    width: 30%; /*Cada elemento ocupa el 30% del espacio*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black; /*Ancho del border, Linea solida y Color del border*/
+    border-radius: 10px; /*Redondear los bordes del cuadro*/
+    box-shadow:  0px 1px 7px 0px rgb(106, 111, 109);
+}
+
+.productos li:hover{
+    border-color: #A93226; /*Cuando el usuario pasa el cursor sobre el elemento*/
+}
+
+.productos li:active{
+    border-color: rgb(4, 88, 4); /*Al hacer clic muestra el border en verde*/
+}
+
+.productos h2{
+    font-size: 30px; /*Tamaño de la letra*/
+    font-weight: bold; /*Texto en negrita*/
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.productos li:hover .producto-precio{
+    font-size: 23px;
+}
+
+footer{
+    background: url(/imagenes/bg.jpg); /*Colocar una imagen en el footer*/
+    text-align: center; /*Alinea el texto en el centro del footer*/
+    padding: 5px;
+}
+
+.img-footer{
+    width: 130px;
+    height: 150px;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 5px;
+}
+
+/*--- --- --- --- --- --- --- CSS para Contacto --- --- --- --- --- ---*/
+
+.main-contacto{
+    background: #FEFEFE;
+}
+
+.contenedor{  
+    width: 940px; /*Ancho de nuestro div*/
+    position: relative;
+    display: flex;
+    margin: 0 auto; /*Centarliza el contenido de acuerdo a la pantalla*/
+    padding: 30px 0 5px 0;
+}
+
+.formulario-tems{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #BBBBBB;
+    box-shadow:  0px 1px 7px 0px rgb(106, 111, 109);
+}
+
+.form-titulo{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15PX;
+}
+
+.formulario-tems label, .formulario-tems legend{
+    display: flex;
+    font-size: 16px; /*font-size establece el tamaño del texto*/
+    margin: 0 0 5px; /*0 arriba, 0 derecha y abajo 10px*/
+}
+
+.formulario-tems fieldset{
+    text-align: center; 
+}
+
+.caja-radio{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.input-formulario{
+    display: flex;
+    padding: 12px 10px; /*12px superior e inferior y 25px a los costados*/
+    background: #FEFEFE;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #BBBBBB;
+}
+
+.input-formulario:focus{
+    border-bottom: 1.5px solid #A93226;
+    outline: none;
+    font-family: Roboto;
+}
+
+.input-formulario::placeholder{
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+textarea{
+    resize: none;
+    font-family: Roboto;
+}
+
+.select-horario{
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-enviar{
+    width: 20vw;
+    padding: 8px 0; /*8px arriba y abajo y 0 a los costados*/
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #A93226;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer; /*Cambia el cursor y coloca la mano apuntanto*/
+    margin: 10px auto 0 auto;
+ }
+
+ .caja-horario{
+     display: flex;
+     width: 940px;
+     margin: 0 auto;
+ }
+ 
+ table{
+    margin: 30px auto;
+ }
+
+thead, tbody{
+    background: #424949;
+    color: white;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 3px 15px;
+}
+
+/*--- --- --- --- --- --- --- CSS para nuestra Home --- --- --- --- --- ---*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    background-color: #FEFEFE;
+    padding: 2em 0;
+    width: 940px;
+    margin: 0 auto; /*Margen 0 arriba y abajo y automatico a los costados*/
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*Aumenta el tamaño de la fuente que tiene por defecto en 2 veces*/
+    margin: 0 0 1em;
+    clear: right;
+}
+
+.principal p{
+    text-align: justify;
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 150px;
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+.mapa{
+    padding: 2em 0;
+    background: linear-gradient(#FEFEFE, #BBBBBB);
+}
+
+.mapa p{
+    text-align: center;
+    margin: 0 0 1em
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 2em 0;
+    background: #BBBBBB;
+
+}
+
+.contenido-diferenciales{
+    width: 740px;
+    margin: 0 auto;
+}
+
+.imagen-diferenciales{
+    width: 50%; /*La imagen ocupa el 50% del ancho de la pagina definido (940px)*/ 
+}
+
+.imagen-diferenciales:hover{
+    opacity: 70%; /*Opacidad de la imagen*/
+    transition: 0.5s;
+}
+
+.lista-diferenciales{
+    width: 50%; /*La lista ocupa el 50% del ancho de la pagina definido (940px)*/
+    display: inline-block; /*Coloca el parrafo y la imagen alineados orizontalmente*/
+    vertical-align: top; /*Coloca la lista verticalmente  en la parte superior*/
+}
+
+.items{
+    line-height: 2; /*Aplica un interlineado entre los parrafos*/
+}
+
+.items:first-child{ /*Con first-chaild seleccionamos el primer items y le aplicamos negrita*/
+    font-weight: bold;
+}
+
+.items:before{
+    content:"★"; /*Colocar las estrellas antes(before) del parrafo*/
+}
+
+.video{
+    width: 560px; /*Ancho que ocupa el video en la pagina*/
+    margin: 1.5em auto; /*Con el automatico centra el video en la pagina*/
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;  
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .utensilios{
+        width: 100%;
+    }
+    
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+    
+}
+

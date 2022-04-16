@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <!--El div es una etiqueta para crear bloques-->
+            <h1><img src="imagenes/logo.png" alt="Logo Barberia" class="img-cabecera"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-contacto">
+            <div class="contenedor formulario">
+
+                <form class="formulario-tems">
+                    <h2 class="form-titulo">Formulario de Contacto</h2>
+                    <input type="text" id="nombre-apellido" class="input-formulario" placeholder="Nombre y Apellido" required>
+
+                    <input type="email" id="correo-electronico" class="input-formulario" placeholder="Correo Electrónico" required>
+
+                    <input type="tel" id="telefono" class="input-formulario" placeholder="Teléfono" required>
+
+                    <textarea cols="70" rows="5" id="mensaje" class="input-formulario" placeholder="Mensaje" required></textarea>
+
+                    <fieldset>
+                        <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                        <div class="caja-radio">
+                            <label for="radio-email"><input class="input-radio" type="radio" name="contacto"
+                                    value="email" id="radio-email">Email</label>
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                                    id="radio-telefono">Teléfono</label>
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                                    id="radio-whatsapp" checked>Whatsapp</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>¿En cual horario prefiere ser atendido?</legend>
+                        <select class="select-horario">
+                            <option value="">Mañana</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <label class="checkbox"><input type="checkbox" checked>¿Desea recibir las novedades de la Barberia
+                        Alura?</label>
+                    <input type="submit" value="Enviar Formulario" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+        <section class="caja-horario">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Hora</th>
+                        <td>08h - 20h</td>
+                        <td>08h - 20h</td>
+                        <td>08h - 20h</td>
+                        <td>08h - 20h</td>
+                        <td>08h - 20h</td>
+                        <td>08h - 18h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo Barberia" class="img-footer">
+        <p class="copyright">&copy; Copyright Barberia Alura - 2022</p>
+        <!--Para el simbolo antes del copyright coloca &copy-->
+    </footer>
+</body>
+
+</html>
